@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OldTimes Games</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/mediaqueries.css" />
+    <link
+      data-react-helmet="true"
+      rel="shortcut icon"
+      sizes="32x32"
+      href="img/PS2.png"
+    />
+    <script
+      src="https://kit.fontawesome.com/3b69cb49b3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="#"><img src="img/Logo.png" alt="" /></a>
+      </div>
+      <nav class="mobile-menu">
+        <ul>
+          <li class="item item-link">
+            <a href="#">Inicio</a>
+          </li>
+          <li class="item item-link">
+            <a href="#products">Productos</a>
+          </li>
+          <li class="item item-link">
+            <a href="#contacts">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Carrito icon -->
+      <div class="cart-btn">
+        <i class="fa-solid fa-cart-shopping" id="cart"></i>
+        <span class="show-cart-items">0</span>
+      </div>
+
+      <!-- Menu Carrito -->
+
+      <aside class="menu-cart">
+        <span>
+          <i class="fa-solid fa-xmark" id="close-cart"></i>
+        </span>
+        <h2 class="cart-title">Su carrito</h2>
+        <div class="cart-content"></div>
+        <div class="cart-footer">
+          <h3>Su total: $ <span class="cart-total">0</span></h3>
+          <button class="buy">Comprar</button>
+        </div>
+      </aside>
+
+      <!-- Menu hamburguesa -->
+      <button class="hamburger">
+        <div class="bar"></div>
+      </button>
+    </header>
+    <div class="background">
+      <div class="container">
+        <div class="row row-1">
+          <div class="col-2">
+            <img src="img/PS2.png" alt="" />
+          </div>
+          <div class="col-2">
+            <h1>¡Revivi la epoca dorada de la PlayStation 2!</h1>
+            <p>
+              Aqui vas a poder encontrar los grandes clasicos mas jugados en esa
+              epocada dorada de nuestra queridisima Play 2!
+            </p>
+            <a href="#products" class="btn">Ver mas &#8594;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Categories -->
+    <main>
+      <!-- Products -->
+      <div class="sm-container" id="products">
+        <h2 class="title">Nuestras Categorias</h2>
+        <div class="categories" id="inicio">
+          <button class="category active">Todos</button>
+          <button class="category" data-category="Accion">Accion</button>
+          <button class="category" data-category="Peleas">Peleas</button>
+          <button class="category" data-category="Aventura">Aventura</button>
+        </div>
+        <div class="sm-container-products">
+          <div class="flex-product"></div>
+        </div>
+      </div>
+
+      <!-- Contacto -->
+
+      <section>
+        <div class="sm-container bg-contact" id="contacts">
+          <div class="contact">
+            <div class="contactForm">
+              <form>
+                <h2 class="title">Contáctanos</h2>
+                <div class="inputBox">
+                  <input type="text" name="" id="" required />
+                  <span>Nombre Completo</span>
+                </div>
+                <div class="inputBox">
+                  <input type="text" name="" id="" required />
+                  <span>Email</span>
+                </div>
+                <div class="inputBox">
+                  <input type="tel" name="" id="" required />
+                  <span>Número de Contacto</span>
+                </div>
+                <div class="inputBox">
+                  <textarea required></textarea>
+                  <span>Escribe el mensaje</span>
+                </div>
+                <div class="inputBox c-submit">
+                  <input type="submit" value="Send" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row line">
+          <div class="footer-col-1">
+            <h3>Descarga nuestro emulador para PC</h3>
+            <p>Descarga para Windows 32 o 64!</p>
+            <div class="app-logo">
+              <a href="#"><img src="img/64bit.png" alt="64" /></a>
+              <a href="#"><img src="img/32bit.png" alt="32" /></a>
+            </div>
+          </div>
+
+          <div class="footer-col-4">
+            <h3>Nuestras Redes</h3>
+            <ul class="ull">
+              <li>
+                <span class="icon"
+                  ><i class="fa-brands fa-twitter fa-2xl"></i
+                ></span>
+                <span class="titulo">Twitter</span>
+              </li>
+              <li>
+                <span class="icon"
+                  ><i class="fa-brands fa-instagram fa-2x"></i
+                ></span>
+                <span class="titulo">Instagram</span>
+              </li>
+              <li>
+                <span class="icon"
+                  ><i class="fa-brands fa-facebook fa-2xl"></i
+                ></span>
+                <span class="titulo">Facebook</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="copyright">Santi Troglia-Copyright</p>
+      </div>
+    </footer>
+    <div class="add-modal"></div>
+
+    <script src="./data.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
