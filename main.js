@@ -51,8 +51,8 @@ const renderDividedProducts = (index = 0) => {
 };
 
 const renderFilteredProducts = (category) => {
-  const categoryList = productsData.filter(
-    (product) => product.category === category
+  const categoryList = productsData.filter((product) =>
+    product.category.includes(category)
   );
   productsDOM.innerHTML = categoryList.map(renderAllProducts).join("");
 };
